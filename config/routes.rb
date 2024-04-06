@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/new'
   root 'static_pages#top' # コントローラー名とアクション名を#で繋ぎます
-  # 他のルート定義...
+  get '/singup', to: 'users#new'
 end
